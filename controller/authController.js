@@ -49,7 +49,7 @@ router.post('/login',(req,res) => {
 })
 
 //userinfo
-router.get('/userInfo',(req,res) => {
+router.get('/userinfo',(req,res) => {
     let token = req.headers['x-access-token'];
     if(!token) res.send({auth:false, token:'No Token Provided'})
     // verify Token
